@@ -118,7 +118,6 @@ html lang="">
         })
         let totalCount = getTotalAccount();
         let pagesCount = Math.ceil(totalCount / countPerPage);
-        //console.log("pagesCount = " + pagesCount);
 
 
         $("button.png-btn-styled").remove();
@@ -146,7 +145,6 @@ html lang="">
                 res = parseInt(result);
             }
         })
-        //console.log(res);
         return res;
     }
 
@@ -223,7 +221,6 @@ html lang="">
         console.log(value_birthday);
         console.log(value_banned);
 
-        //let current_page = window.location.href; //код текущей страницы
         let url = "/rest/players/";
 
         $.ajax({
@@ -342,10 +339,6 @@ html lang="">
         })
         return parseInt(current_page) - 1;
     }
-
-    /*let js = document.createElement("script");
-    js.src = "/my.js?" + Date.now();
-    document.body.appendChild(js);*/
 
 </script>
 
